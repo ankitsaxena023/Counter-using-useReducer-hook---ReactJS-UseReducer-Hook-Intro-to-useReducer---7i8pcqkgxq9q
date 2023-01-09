@@ -7,11 +7,11 @@ const App = () => {
   
   function reducer(state, action) {
     switch (action.type) {
-        case 'add';
+      case 'add':
            return {count: state.count +1};
-        case 'delete';
+      case 'delete':
            return {count: state.count > 0 ? state.count - 1 : 0};
-        case 'deleteAll';
+      case 'deleteAll':
            return {count: 0};
         default:
            throw new Error();
